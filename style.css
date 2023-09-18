@@ -16,13 +16,13 @@ body {
 
 nav {
     flex: 1;
-    text-align: right;
-    margin-top: -50px;
+    text-align: left;
 }
 
     nav ul {
         display: inline-block;
         list-style-type: none;
+        padding-left: 50px;
     }
 
         nav ul li {
@@ -78,9 +78,14 @@ nav {
     }
 
 .header {
-    background-image: url('C:\Users\DESKTOP\Desktop\ProductShowcasefinal\BG.jpg');
-    background-size: contain;
+    background-image: url("bg2.jpg");
+    background-size: 200vh;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
     .header .row {
@@ -90,6 +95,26 @@ nav {
 .categories {
     margin: 70px 0;
 }
+
+    .categories h2 {
+        text-align: center;
+        margin: 0 auto 80px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+
+        .categories h2::after {
+            content:'';
+            background:purple;
+            width:80px;
+            height: 5px;
+            border-radius:5px;
+            position:absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
 
 .col-3 {
     flex-basis: 30%;
@@ -106,4 +131,73 @@ nav {
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+a {
+    color: purple; /* Default link color */
+    text-decoration: none; /* Remove underlines */
+}
+
+    /* Define the link styles on hover */
+    a:hover {
+        background-color: none; /* Highlight color when hovered */
+        color: #eb5dd3; /* Text color when hovered */
+        text-decoration: none; /* Underline on hover */
+        outline: 2px purple;
+    }
+
+/* Footer */
+
+.footer{
+    background:#000;
+    color: white;
+    font-size:14px;
+    padding:60px 0 20px;
+}
+
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, footer-col-3, .footer-col-4{
+    min-width:250px;
+    margin-bottom:20px;
+}
+
+.footer-col-1{
+    flex-basis:30%;
+}
+.footer-col-2 {
+    flex: 1;
+    text-align:center;
+}
+
+.footer-col-2 img{
+    width: 120px;
+    margin-bottom:20px;
+}
+  
+.footer-col-3, .footer-col-4{
+    flex-basis:12%;
+    text-align:center;
+}
+
+.footer-col-4{
+    padding-top:18px;
+}
+ul{
+    list-style-type:none;
+}
+
+.footer hr{
+    border:none;
+    background: #b5b5b5;
+    height:1px;
+    margin: 20px 0;
 }
