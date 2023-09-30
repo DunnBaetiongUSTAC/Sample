@@ -1,0 +1,108 @@
+
+.header {
+    background-image: url("BG.jpg");
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+        padding-left: 50px;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+/* Style for the product container */
+.product {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+/* Style for the product image */
+.product img {
+    width: 100px;
+    height: flex;
+    transition: transform 0.2s;
+}
+
+
+
+/* Style for the product price (hidden by default) */
+.product .price {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.2s;
+}
+
+/* Style for the product title */
+.product .title {
+    padding: 10px;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+/* Show the price and scale the image when hovering over the product */
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product:hover img {
+    transform: scale(1.2);
+}
+
+.product:hover .price {
+    display: block;
+    opacity: 0.8;
+}
+
+
+a {
+    color: purple !important; /* Default link color */
+    text-decoration: none !important; /* Remove underlines */
+}
+
+    /* Define the link styles on hover */
+    a:hover {
+        background-color: none !important; /* Highlight color when hovered */
+        color: #eb5dd3 !important; /* Text color when hovered */
+        text-decoration: none !important; /* Underline on hover */
+        outline: 2px purple !important;
+    }
